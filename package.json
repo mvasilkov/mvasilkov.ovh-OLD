@@ -1,0 +1,26 @@
+{
+  "name": "mvasilkov.ovh",
+  "version": "1.0.0",
+  "description": "Success is commemorated; failure merely remembered",
+  "main": "manage.py",
+  "repository": "git@github.com:mvasilkov/mvasilkov.ovh.git",
+  "author": "Mark Vasilkov <mvasilkov@gmail.com>",
+  "license": "Vim",
+  "private": true,
+  "dependencies": {
+    "fg-loadcss": "^1.2.1",
+    "fontfaceobserver": "^2.0.8",
+    "next": "^1.2.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "css": "node-sass -r stylesheets -o static",
+    "watch": "nodemon -w stylesheets -e scss -x 'yarn run css'"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0"
+  }
+}

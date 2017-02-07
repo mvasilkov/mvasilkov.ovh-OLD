@@ -1,0 +1,38 @@
+// https://bitsofco.de/the-new-system-font-stack/
+$font-stack: (-apple-system, system-ui, BlinkMacSystemFont,
+'Segoe UI', Roboto, 'Droid Sans', 'Helvetica Neue', sans-serif);
+
+body {
+    background: #fff;
+    color: #303030;
+    font-family: $font-stack;
+    margin: 0;
+    padding: 1em;
+    text-rendering: optimizelegibility;
+}
+
+body.open-sans-loaded {
+    font-family: 'Open Sans', $font-stack;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0 0 1rem;
+}
+
+h1, h2 {
+    letter-spacing: -1px;
+}
+
+article {
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
+header {
+    margin-bottom: 5rem;
+
+    h1 + p {
+        font-style: italic;
+        margin-top: -0.5rem;
+    }
+}
