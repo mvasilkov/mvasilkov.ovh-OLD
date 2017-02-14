@@ -36,3 +36,12 @@ header {
         margin-top: -0.5rem;
     }
 }
+
+a {
+    background-image: linear-gradient(to bottom, #fff 50%, #303030 50%);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 40px 2px;
+    color: #303030;
+    text-decoration: none;
+}

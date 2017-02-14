@@ -3,6 +3,8 @@ import Head from 'next/head'
 
 import { loadFonts } from '../util/fonts'
 
+const email = '<a href="mailto:&#x6d;&#x76;&#x61;&#x73;&#x69;&#x6c;&#x6b;&#x6f;&#x76;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x6d;&#x76;&#x61;&#x73;&#x69;&#x6c;&#x6b;&#x6f;&#x76;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a>'
+
 export default class extends React.Component {
     componentDidMount() {
         loadFonts()
@@ -21,6 +23,7 @@ export default class extends React.Component {
                     <p>Computer programmer from Israel</p>
                 </header>
                 <p>I do Python, Django, JavaScript, Node.js, and React.</p>
+                <p>Write to me: <span dangerouslySetInnerHTML={{ __html: email }}></span></p>
             </article>
         )
     }
