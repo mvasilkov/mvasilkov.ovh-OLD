@@ -11,8 +11,12 @@ body {
     text-rendering: optimizelegibility;
 }
 
-body.open-sans-loaded {
+body.web-fonts-loaded {
     font-family: 'Open Sans', $font-stack;
+
+    p {
+        font-family: 'Noto Serif', $font-stack;
+    }
 }
 
 h1, h2, h3, h4, p {
@@ -29,7 +33,7 @@ article {
 }
 
 header {
-    margin-bottom: 5rem;
+    margin: 1rem 0 4rem;
 
     h1 + p {
         font-style: italic;
@@ -44,4 +48,8 @@ a {
     background-size: 40px 2px;
     color: #303030;
     text-decoration: none;
+}
+
+p {
+    font-size: 1.125rem;
 }

@@ -1,5 +1,7 @@
 {
     "files.associations": {
         "*.js": "javascriptreact"
-    }
+    },
+    "css.colorDecorators.enable": false,
+    "scss.colorDecorators.enable": false
 }
