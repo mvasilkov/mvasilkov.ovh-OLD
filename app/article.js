@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-import { loadFonts } from '../util/fonts'
+import { loadFonts } from './fonts'
 
 class Article extends React.Component {
     componentDidMount() {
