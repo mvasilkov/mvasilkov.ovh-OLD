@@ -1,18 +1,21 @@
 import React from 'react'
+import Article from '../javascripts/article'
 
 const email = '(* email *)'
 
-export default class extends React.Component {
+class Content extends React.Component {
     render() {
         return (
-            <article>
+            <Article>
                 <header>
                     <h1>Mark Vasilkov</h1>
                     <p>Computer programmer from Israel</p>
                 </header>
                 <p>I work in Python, Django, JavaScript, and React.</p>
                 <p>Write to me: <span dangerouslySetInnerHTML={{ __html: email }}></span></p>
-            </article>
+            </Article>
         )
     }
 }
+
+export default Content

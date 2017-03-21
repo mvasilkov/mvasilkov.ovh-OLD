@@ -1,24 +1,29 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Content from '../build/(* page *)'
 import { loadFonts } from '../util/fonts'
 
-export default class extends React.Component {
+class Article extends React.Component {
     componentDidMount() {
         loadFonts()
     }
 
     render() {
         return (
-            <main>
+            <article>
                 <Head>
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <title>Mark Vasilkov</title>
+                    <title>{this.props.title}</title>
                     <link rel="stylesheet" href="/static/master.css" />
                 </Head>
-                <Content />
-            </main>
+                {this.props.children}
+            </article>
         )
     }
 }
+
+Article.defaultProps = {
+    title: 'Mark Vasilkov',
+}
+
+export default Article
