@@ -41,6 +41,14 @@ header {
     }
 }
 
+footer {
+    margin: 2rem 0 1rem;
+
+    p {
+        font-style: italic;
+    }
+}
+
 a {
     background-image: linear-gradient(to bottom, #fff 50%, #303030 50%);
     background-position: bottom;
