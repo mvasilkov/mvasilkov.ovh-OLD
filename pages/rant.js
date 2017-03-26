@@ -1,10 +1,12 @@
 import React from 'react'
 import Article from '../app/article'
 
+export const pageTitle = 'Ryan Dahl: I hate almost all software'
+
 class Content extends React.Component {
     render() {
         return (
-            <Article title="Ryan Dahl: I hate almost all software">
+            <Article title={pageTitle}>
                 <header>
                     <h2>I hate almost all software.</h2>
                 </header>

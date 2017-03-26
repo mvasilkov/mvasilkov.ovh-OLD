@@ -22,9 +22,12 @@
     "watch": "nodemon -w stylesheets -e scss -x 'yarn run css'"
   },
   "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.0",
+    "babel-register": "^6.24.0",
     "he": "^1.1.1",
     "jsonfile": "^2.4.0",
     "node-sass": "^4.5.0",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "shelljs": "^0.7.7"
   }
 }
