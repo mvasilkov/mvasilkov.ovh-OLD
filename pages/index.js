@@ -3,6 +3,8 @@ import Article from '../app/article'
 
 import email from '../build/email'
 
+export const pageTitle = 'Start page'
+
 class Content extends React.Component {
     render() {
         return (

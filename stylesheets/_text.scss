@@ -2,6 +2,9 @@
 $font-stack: (-apple-system, system-ui, BlinkMacSystemFont,
 'Segoe UI', Roboto, 'Droid Sans', 'Helvetica Neue', sans-serif);
 
+$font-mono: ('SFMono-Regular', Consolas, 'DejaVu Sans Mono',
+Menlo, Monaco, monospace);
+
 body {
     background: #fff;
     color: #303030;
@@ -17,6 +20,11 @@ body.web-fonts-loaded {
     p {
         font-family: 'Noto Serif', $font-stack;
     }
+}
+
+code, kbd, pre, samp {
+    font-family: $font-mono;
+    font-weight: normal;
 }
 
 h1, h2, h3, h4, p {
