@@ -60,7 +60,7 @@ blockquote {
 
 body {
   background: #fff;
-  color: #303030;
+  color: #263238;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 1em;
@@ -79,6 +79,7 @@ h1, h2, h3, h4, p, pre {
   margin: 0 0 1rem; }
 
 h1, h2 {
+  color: #37474f;
   letter-spacing: -1px; }
 
 article {
@@ -97,12 +98,24 @@ footer {
     font-style: italic; }
 
 a {
-  background-image: linear-gradient(to bottom, #fff 50%, #303030 50%);
+  background-image: linear-gradient(to bottom, #fff 50%, #2979ff 50%);
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: 40px 2px;
-  color: #303030;
+  color: #2979ff;
   text-decoration: none; }
+
+a:visited {
+  background-image: linear-gradient(to bottom, #fff 50%, #d500f9 50%);
+  color: #d500f9; }
+
+a:hover, a:focus {
+  background-image: linear-gradient(to bottom, #fff 50%, #f50057 50%);
+  color: #f50057; }
+
+a:active {
+  position: relative;
+  top: 2px; }
 
 p {
   font-size: 1.125rem; }

@@ -2219,6 +2219,10 @@ map-stream@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
 
+material-design-color@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/material-design-color/-/material-design-color-2.3.2.tgz#e8af958d852a8747bfb211e48ce1282bda918815"
+
 md5-file@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/md5-file/-/md5-file-3.1.1.tgz#db3c92c09bbda5c2de883fa5490dd711fddbbab9"
@@ -2367,9 +2371,9 @@ nested-error-stacks@^1.0.0:
   dependencies:
     inherits "~2.0.1"
 
-next@^2.0.0-beta.39:
-  version "2.0.0-beta.40"
-  resolved "https://registry.yarnpkg.com/next/-/next-2.0.0-beta.40.tgz#b581ec0770059863966bc9fea4f5fe80930ff9ce"
+next@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/next/-/next-2.0.0.tgz#abab032e58c47e238b488550e0c9c3d829bf5728"
   dependencies:
     ansi-html "0.0.7"
     babel-core "6.24.0"

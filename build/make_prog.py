@@ -1,11 +1,11 @@
 from glob import iglob
 import json
-from os import makedirs
+from os import makedirs, sep
 from os.path import isfile, split as split_path
 import re
 from shutil import rmtree
 
-PROGRAMS_ROOT = 'programs/'
+PROGRAMS_ROOT = 'programs' + sep
 PROGRAMS = (p for p in iglob(PROGRAMS_ROOT + '**', recursive=True)
             if isfile(p))
 OUT_DIR = 'build/prog'
@@ -31,7 +31,11 @@ def build(p):
     path = '%s/%s' % (OUT_DIR, path)
     mkdirp(path)
 
-    name = re.sub('(?<=\.).*?$', 'json', name)
+    def replace_json(previous):
+        return ('.json' if previous.group(1) == 'js' else
+                '_%s.json' % previous.group(1))
+
+    name = re.sub('\.(.*?)$', replace_json, name)
     with open('%s/%s' % (path, name), 'w', encoding='utf-8') as out:
         out.write(json.dumps({'lines': lines}, indent=2))
 

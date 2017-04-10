@@ -2,8 +2,8 @@ import React from 'react'
 import Article from '../app/article'
 import Listing from '../app/listing'
 
-import progJS from '../build/prog/name_main/JS'
-import progPython from '../build/prog/name_main/Python'
+import progJS from '../build/prog/basic/entry_point'
+import progPython from '../build/prog/basic/entry_point_py'
 
 export const pageTitle = "Node.js counterpart of Python's __name__ == '__main__'"
 
