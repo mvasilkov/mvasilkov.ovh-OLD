@@ -8,7 +8,7 @@ export const pageTitle = 'Start page'
 class Content extends React.Component {
     render() {
         return (
-            <Article>
+            <Article nav={false}>
                 <header>
                     <h1>Mark Vasilkov</h1>
                     <p>Computer programmer from Israel</p>

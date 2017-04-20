@@ -1,0 +1,33 @@
+@import '../node_modules/material-design-color/material-color';
+
+@mixin link($color) {
+    background-image: linear-gradient(to bottom, $clr-white 50%, $color 50%);
+    color: $color;
+}
+
+a {
+    @include link($clr-blue-a400);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 40px 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+// a:visited {
+//     @include link($clr-purple-a400);
+// }
+
+a:active {
+    @include link($clr-pink-a400);
+}
+
+nav {
+    a {
+        @include link($clr-blue-a200);
+    }
+
+    a:active {
+        @include link($clr-pink-a200);
+    }
+}

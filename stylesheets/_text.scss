@@ -19,28 +19,62 @@ body {
 body.web-fonts-loaded {
     font-family: 'Open Sans', $font-stack;
 
-    p {
+    p, h3, h4, nav {
         font-family: 'Noto Serif', $font-stack;
     }
 }
 
 code, kbd, pre, samp {
     font-family: $font-mono;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, p, pre {
     margin: 0 0 1rem;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     color: $clr-blue-grey-800;
+
+    code {
+        font-size: 85%;
+    }
+}
+
+h1, h2 {
     letter-spacing: -1px;
+}
+
+h3, h4 {
+    font-weight: 400;
+    position: relative;
+
+    &::before {
+        color: $clr-blue-grey-100;
+        font-family: $font-mono;
+        font-size: 0.8125rem;
+        left: -2.5rem;
+        position: absolute;
+    }
+}
+
+h3::before {
+    bottom: 3px;
+    content: '<h3>';
+}
+
+h4::before {
+    bottom: 1px;
+    content: '<h4>';
 }
 
 article {
     margin: 0 auto;
     max-width: 40rem;
+}
+
+nav {
+    font-size: 0.875rem;
 }
 
 header {
@@ -60,34 +94,13 @@ footer {
     }
 }
 
-a {
-    background-image: linear-gradient(to bottom, $clr-white 50%, $clr-blue-a400 50%);
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: 40px 2px;
-    color: $clr-blue-a400;
-    text-decoration: none;
-}
-
-a:visited {
-    background-image: linear-gradient(to bottom, $clr-white 50%, $clr-purple-a400 50%);
-    color: $clr-purple-a400;
-}
-
-a:hover, a:focus {
-    background-image: linear-gradient(to bottom, $clr-white 50%, $clr-pink-a400 50%);
-    color: $clr-pink-a400;
-}
-
-a:active {
-    position: relative;
-    top: 2px;
-}
-
 p {
     font-size: 1.125rem;
+    line-height: 1.5;
 }
 
 pre {
+    background-color: $clr-yellow-50;
     font-size: 0.8125rem;
+    padding: 1rem;
 }
