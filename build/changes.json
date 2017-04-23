@@ -1,12 +1,17 @@
 [
   {
-    "path": "rant.js",
-    "pubdate": 1490550089,
-    "title": "Ryan Dahl: I hate almost all software"
+    "path": "index",
+    "pubdate": 1492701269,
+    "title": "Start page"
   },
   {
-    "path": "index.js",
-    "pubdate": 1490112559,
-    "title": "Start page"
+    "path": "name_main",
+    "pubdate": 1491846855,
+    "title": "Node.js counterpart of Python's __name__ == '__main__'"
+  },
+  {
+    "path": "rant",
+    "pubdate": 1490550089,
+    "title": "Ryan Dahl: I hate almost all software"
   }
 ]

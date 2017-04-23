@@ -59,7 +59,7 @@ if (require.main === module) {
         console.log(p)
 
         changes.push({
-            path: p,
+            path: p.replace(/\.js$/, ''),
             pubdate: getDate(p),
             title: getTitle(p, defaultTitle),
         })

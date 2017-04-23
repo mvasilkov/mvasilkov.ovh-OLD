@@ -5,7 +5,7 @@ class Listing extends React.Component {
         const p = this.props.program
 
         return (
-            <pre>
+            <pre className="listing">
                 {p.lines.map((line, n) => <code key={n}>{`${line}\n`}</code>)}
             </pre>
         )

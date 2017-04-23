@@ -127,9 +127,16 @@ p {
   line-height: 1.5; }
 
 pre {
+  font-size: 0.8125rem; }
+
+.listing {
   background-color: #fffde7;
-  font-size: 0.8125rem;
   padding: 1rem; }
+
+.changelog .line {
+  line-height: 1.9; }
+  .changelog .line::after {
+    content: '\a'; }
 
 a {
   background-image: linear-gradient(to bottom, #fff 50%, #2979ff 50%);

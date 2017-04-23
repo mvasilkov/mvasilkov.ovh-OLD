@@ -100,7 +100,18 @@ p {
 }
 
 pre {
-    background-color: $clr-yellow-50;
     font-size: 0.8125rem;
+}
+
+.listing {
+    background-color: $clr-yellow-50;
     padding: 1rem;
+}
+
+.changelog .line {
+    line-height: 1.9;
+
+    &::after {
+        content: '\a';
+    }
 }
