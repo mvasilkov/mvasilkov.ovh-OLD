@@ -3,6 +3,7 @@ const jsonfile = require('jsonfile')
 const sh = require('shelljs')
 
 const gitCommandLine = 'git log --follow -1 --pretty=medium --date=unix'
+const gitCommandLineA = `${gitCommandLine} --diff-filter=A`
 
 const ignorePages = {
     '_changes.js': true,
@@ -17,7 +18,7 @@ function setup() {
     })
 }
 
-function getDate(p) {
+function getDate(p, gitCommandLine) {
     const a = sh.exec(`${gitCommandLine} pages/${p}`, { silent: true })
     assert(a.code === 0)
 
@@ -37,13 +38,6 @@ function getTitle(p, defaultTitle) {
     return pageTitle || defaultTitle
 }
 
-function compare(a, b) {
-    if (a.pubdate == b.pubdate)
-        return a.title.localeCompare(b.title, 'en-US')
-
-    return b.pubdate - a.pubdate
-}
-
 if (require.main === module) {
     setup()
 
@@ -60,11 +54,13 @@ if (require.main === module) {
 
         changes.push({
             path: p.replace(/\.js$/, ''),
-            pubdate: getDate(p),
+            created: getDate(p, gitCommandLineA),
+            updated: getDate(p, gitCommandLine),
             title: getTitle(p, defaultTitle),
         })
     }
 
+    const compare = require('../app/functions').comparator('created')
     changes.sort(compare)
 
     jsonfile.writeFileSync('build/changes.json', changes, { spaces: 2 })
