@@ -1,4 +1,4 @@
-export default function comparator(propertyName) {
+export function comparator(propertyName) {
     return function compare(a, b) {
         if (a[propertyName] == b[propertyName])
             return a.title.localeCompare(b.title, 'en-US')

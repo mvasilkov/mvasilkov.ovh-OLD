@@ -110,6 +110,8 @@ article {
 
 nav {
   font-size: 0.875rem; }
+  nav a + a {
+    margin-left: 1rem; }
 
 header {
   margin: 1rem 0 4rem; }

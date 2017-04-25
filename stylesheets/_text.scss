@@ -75,6 +75,10 @@ article {
 
 nav {
     font-size: 0.875rem;
+
+    a + a {
+        margin-left: 1rem;
+    }
 }
 
 header {

@@ -10,9 +10,10 @@ const Line = ({ path, pubdate, title }) => (
     </code>
 )
 
-const Changelog = ({ changes }) => (
+const Changelog = ({ changes, orderBy }) => (
     <pre className="changelog">
-        {changes.map(ch => <Line key={ch.path} {...ch} />)}
+        {changes.map(ch =>
+            <Line key={ch.path} {...ch} pubdate={ch[orderBy]} />)}
     </pre>
 )
 

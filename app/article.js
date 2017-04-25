@@ -28,6 +28,8 @@ class Article extends React.Component {
         return (
             <nav>
                 <Link href="/"><a>Start page</a></Link>
+                {this.props.nav != 'changelog' &&
+                    <Link href="/_changes"><a>Changelog</a></Link>}
             </nav>
         )
     }
