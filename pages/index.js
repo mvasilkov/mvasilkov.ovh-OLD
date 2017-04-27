@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Article from '../app/article'
 
 import email from '../build/email'
@@ -15,6 +16,7 @@ class Content extends React.Component {
                 </header>
                 <p>I work in Python, Django, JavaScript, and React.</p>
                 <p>Write to me: <span dangerouslySetInnerHTML={email}></span></p>
+                <p><Link href="/contents"><a>Contents</a></Link></p>
             </Article>
         )
     }

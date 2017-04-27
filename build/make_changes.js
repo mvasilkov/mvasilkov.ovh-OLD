@@ -6,7 +6,7 @@ const gitCommandLine = 'git log --follow -1 --pretty=medium --date=unix'
 const gitCommandLineA = `${gitCommandLine} --diff-filter=A`
 
 const ignorePages = {
-    '_changes.js': true,
+    'contents.js': true,
 }
 
 function setup() {

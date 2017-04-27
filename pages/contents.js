@@ -5,7 +5,7 @@ import Changelog from '../app/changelog'
 import { comparator } from '../app/functions'
 import changes from '../build/changes'
 
-export const pageTitle = 'Changelog'
+export const pageTitle = 'Contents'
 
 class Content extends React.Component {
     constructor(props) {
@@ -33,7 +33,7 @@ class Content extends React.Component {
 
     render() {
         return (
-            <Article nav="changelog" title={pageTitle}>
+            <Article nav={pageTitle.toLowerCase()} title={pageTitle}>
                 <header>
                     <h1>{pageTitle}</h1>
                     <pre>
