@@ -1,4 +1,4 @@
-@import '../node_modules/material-design-color/material-color';
+@import 'colors';
 
 // https://bitsofco.de/the-new-system-font-stack/
 $font-stack: (-apple-system, system-ui, BlinkMacSystemFont,
@@ -7,9 +7,14 @@ $font-stack: (-apple-system, system-ui, BlinkMacSystemFont,
 $font-mono: ('SFMono-Regular', Consolas, 'DejaVu Sans Mono',
 Menlo, Monaco, monospace);
 
+@mixin smoothing-antialiased {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
-    background: $clr-white;
-    color: $clr-blue-grey-900;
+    background: $color-background;
+    color: $color-copy;
     font-family: $font-stack;
     margin: 0;
     padding: 1em;
@@ -34,7 +39,7 @@ h1, h2, h3, h4, p, pre {
 }
 
 h1, h2, h3, h4 {
-    color: $clr-blue-grey-800;
+    font-weight: 600;
 
     code {
         font-size: 85%;
@@ -50,7 +55,8 @@ h3, h4 {
     position: relative;
 
     &::before {
-        color: $clr-blue-grey-100;
+        @include smoothing-antialiased;
+        color: $color-weak;
         font-family: $font-mono;
         font-size: 0.8125rem;
         left: -2.5rem;
@@ -108,14 +114,26 @@ pre {
 }
 
 .listing {
-    background-color: $clr-yellow-50;
+    background-color: $color-background2;
     padding: 1rem;
 }
 
 .changelog .line {
     line-height: 1.9;
 
+    .date {
+        @include smoothing-antialiased;
+        color: $color-weak;
+    }
+
     &::after {
         content: '\a';
     }
+}
+
+hr {
+    border-color: $color-border;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    margin: 2rem 0;
 }

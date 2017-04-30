@@ -16,6 +16,8 @@ class Content extends React.Component {
                 </header>
                 <p>I work in Python, Django, JavaScript, and React.</p>
                 <p>Write to me: <span dangerouslySetInnerHTML={email}></span></p>
+                <hr />
+                <p>This is my personal home page.</p>
                 <p><Link href="/contents"><a>Contents</a></Link></p>
             </Article>
         )
