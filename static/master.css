@@ -98,13 +98,13 @@ h3, h4 {
     left: -2.5rem;
     position: absolute; }
 
-h3::before {
-  bottom: 3px;
-  content: '<h3>'; }
-
-h4::before {
-  bottom: 1px;
-  content: '<h4>'; }
+@media (min-width: 48em) {
+  h3::before {
+    bottom: 3px;
+    content: '<h3>'; }
+  h4::before {
+    bottom: 1px;
+    content: '<h4>'; } }
 
 article {
   margin: 0 auto;
@@ -116,7 +116,7 @@ nav {
     margin-left: 1rem; }
 
 header {
-  margin: 1rem 0 4rem; }
+  margin: 1rem 0 3rem; }
   header h1 + p {
     font-style: italic;
     margin-top: -0.5rem; }

@@ -64,14 +64,16 @@ h3, h4 {
     }
 }
 
-h3::before {
-    bottom: 3px;
-    content: '<h3>';
-}
+@media (min-width: 48em) {
+    h3::before {
+        bottom: 3px;
+        content: '<h3>';
+    }
 
-h4::before {
-    bottom: 1px;
-    content: '<h4>';
+    h4::before {
+        bottom: 1px;
+        content: '<h4>';
+    }
 }
 
 article {
@@ -88,7 +90,7 @@ nav {
 }
 
 header {
-    margin: 1rem 0 4rem;
+    margin: 1rem 0 3rem;
 
     h1 + p {
         font-style: italic;
