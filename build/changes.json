@@ -1,5 +1,11 @@
 [
   {
+    "path": "java_type_wtf",
+    "created": 1493735559,
+    "updated": 1493735559,
+    "title": "Java type promotion WTF"
+  },
+  {
     "path": "nodejs_name_main",
     "created": 1490799889,
     "updated": 1493072196,
@@ -8,7 +14,7 @@
   {
     "path": "rant_hate_software",
     "created": 1490110032,
-    "updated": 1493072196,
+    "updated": 1493735559,
     "title": "Ryan Dahl: I hate almost all software"
   },
   {
