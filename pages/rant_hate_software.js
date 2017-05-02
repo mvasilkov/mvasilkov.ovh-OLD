@@ -8,7 +8,7 @@ class Content extends React.Component {
         return (
             <Article title={pageTitle}>
                 <header>
-                    <h2>I hate almost all software.</h2>
+                    <h1>I hate almost all software.</h1>
                 </header>
                 <p>It's unnecessary and complicated at almost every layer. At best I can congratulate someone for quickly and simply solving a problem on top of the shit that they are given. The only software that I like is one that I can easily understand and solves my problems. The amount of complexity I'm willing to tolerate is proportional to the size of the problem being solved.</p>
                 <p>In the past year I think I have finally come to understand the ideals of Unix: file descriptors and processes orchestrated with C. It's a beautiful idea. This is not, however, what we interact with. The complexity was not contained. Instead I deal with DBus and /usr/lib and Boost and ioctls and SMF and signals and volatile variables and prototypal inheritance and _C99_FEATURES_ and dpkg and autoconf.</p>
