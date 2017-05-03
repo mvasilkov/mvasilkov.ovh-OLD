@@ -15,12 +15,12 @@ class Content extends React.Component {
                     <p>Sufficiently advanced Java is indistinguishable from satire.</p>
                 </header>
                 <p>Consider the following program:</p>
-                <Listing program={prog} />
+                <Listing program={prog} region="main" />
                 <p>This is what it outputs:</p>
-                <pre className="listing">
-                    <code>97.0{'\n'}</code>
-                    <code>class java.lang.Float{'\n'}</code>
-                </pre>
+                <Listing program={[
+                    '97.0',
+                    'class java.lang.Float',
+                ]} />
                 <p>Because of course it does.</p>
             </Article>
         )
