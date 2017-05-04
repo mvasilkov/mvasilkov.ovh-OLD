@@ -1,8 +1,14 @@
 [
   {
+    "path": "algo/naive_factorial",
+    "created": 1493908516,
+    "updated": 1493908516,
+    "title": "Naïve JavaScript factorial"
+  },
+  {
     "path": "java_type_wtf",
     "created": 1493735559,
-    "updated": 1493735559,
+    "updated": 1493825594,
     "title": "Java type promotion WTF"
   },
   {

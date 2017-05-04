@@ -46,8 +46,8 @@ if (require.main === module) {
 
     const changes = []
 
-    for (let p of sh.ls('pages')) {
-        if (p in ignorePages)
+    for (let p of sh.ls('-R', 'pages')) {
+        if (p in ignorePages || !p.endsWith('.js'))
             continue
 
         console.log(p)
