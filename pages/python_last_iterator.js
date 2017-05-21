@@ -13,8 +13,8 @@ class Content extends React.Component {
                 <header>
                     <h2>{pageTitle}</h2>
                 </header>
-                <p>Use a <em>deque</em> of size 1:</p>
-                <Listing program={prog} />
+                <p>Use a <em>deque</em> of size 1.</p>
+                <Listing program={prog} region="last" />
             </Article>
         )
     }

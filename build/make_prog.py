@@ -9,6 +9,7 @@ PROGRAMS_ROOT = 'programs' + sep
 PROGRAMS = (p for p in iglob(PROGRAMS_ROOT + '**', recursive=True)
             if isfile(p))
 OUT_DIR = 'build/prog'
+COMMENT = '\s*(?://|#)'
 
 
 def mkdirp(path):
@@ -23,14 +24,14 @@ def make_regions(prog):
     stack = []
 
     for n, line in enumerate(prog['lines']):
-        region = re.match('\s*// region (.*)', line)
+        region = re.match('%s region (.*)' % COMMENT, line)
         if region is not None:
             name = region.group(1)
             regions[name] = {'a': n + 1}
             stack.append(name)
             continue
 
-        endregion = re.match('\s*// endregion', line)
+        endregion = re.match('%s endregion' % COMMENT, line)
         if endregion is not None:
             name = stack.pop()
             regions[name]['b'] = n
