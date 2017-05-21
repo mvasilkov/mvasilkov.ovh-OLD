@@ -1,5 +1,11 @@
 [
   {
+    "path": "python_last_iterator",
+    "created": 1495377091,
+    "updated": 1495377091,
+    "title": "Get the last item from an iterator in Python"
+  },
+  {
     "path": "algo/naive_factorial",
     "created": 1493908516,
     "updated": 1494776681,

@@ -2403,9 +2403,9 @@ ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
-multili@^1.1.0:
+"multili@git+ssh://git@github.com:mvasilkov/multili.git#noes6":
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/multili/-/multili-1.1.0.tgz#db088f11f1f725f60645ed7cc42bfcd36b08be40"
+  resolved "git+ssh://git@github.com:mvasilkov/multili.git#24e43e8baf7ab13c3f1414fe1013c814129e03cb"
 
 mv@2.1.1:
   version "2.1.1"
