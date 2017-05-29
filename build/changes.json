@@ -1,8 +1,14 @@
 [
   {
+    "path": "quine",
+    "created": 1496071168,
+    "updated": 1496071168,
+    "title": "Quine (self-reproducing) programs"
+  },
+  {
     "path": "python_last_iterator",
     "created": 1495377091,
-    "updated": 1495377091,
+    "updated": 1495383986,
     "title": "Get the last item from an iterator in Python"
   },
   {
