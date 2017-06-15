@@ -133,6 +133,12 @@ pre {
     }
 }
 
+textarea {
+    font-family: $font-mono;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+}
+
 hr {
     border-color: $color-border;
     border-style: solid none none;

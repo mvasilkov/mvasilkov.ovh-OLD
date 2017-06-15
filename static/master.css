@@ -146,6 +146,11 @@ pre {
   .changelog .line::after {
     content: '\a'; }
 
+textarea {
+  font-family: "SFMono-Regular", Consolas, "DejaVu Sans Mono", Menlo, Monaco, monospace;
+  font-size: 0.8125rem;
+  line-height: 1.5; }
+
 hr {
   border-color: #e3d1c7;
   border-style: solid none none;
