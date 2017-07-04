@@ -1,6 +1,7 @@
-$color-background: #fff6f1;
-$color-background2: #f8ede6;
-$color-border: #e3d1c7;
-$color-copy: #332f2e;
-$color-link: #544b48;
-$color-weak: #857871;
+// http://tango.freedesktop.org/static/cvs/tango-art-tools/palettes/Tango-Palette.svg
+$color-background: #fff;
+$color-background2: $color-background;
+$color-border: #d3d7cf;
+$color-copy: transparentize(#2e3436, 0.09);
+$color-link: $color-copy;
+$color-weak: #888a85;
