@@ -1,0 +1,19 @@
+{
+  "lines": [
+    "'use strict'",
+    "/* Easing functions */",
+    "",
+    "export",
+    "// region linear",
+    "function linear(t) {",
+    "    return t",
+    "}",
+    "// endregion"
+  ],
+  "regions": {
+    "linear": {
+      "a": 5,
+      "b": 8
+    }
+  }
+}

@@ -158,6 +158,10 @@ hr {
   border-width: 1px 0 0;
   margin: 2rem 0; }
 
+canvas {
+  display: block;
+  margin: 1rem 0; }
+
 a {
   background-image: linear-gradient(to bottom, #fff 50%, rgba(46, 52, 54, 0.91) 50%);
   color: rgba(46, 52, 54, 0.91);
