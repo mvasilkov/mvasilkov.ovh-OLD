@@ -36,8 +36,16 @@ class Graph extends React.Component {
 
         canvas.beginPath()
         canvas.moveTo(0, 0)
+        canvas.lineTo(SIZE, SIZE)
 
-        for (let t = STEP; t < SIZE; t += STEP) {
+        canvas.setLineDash([9, 9])
+        canvas.stroke()
+        canvas.setLineDash([])
+
+        canvas.beginPath()
+        canvas.moveTo(0, 0)
+
+        for (let t = STEP; t < 1; t += STEP) {
             canvas.lineTo(t * SIZE, x(t) * SIZE)
         }
 

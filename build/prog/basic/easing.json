@@ -3,17 +3,38 @@
     "'use strict'",
     "/* Easing functions */",
     "",
-    "export",
     "// region linear",
     "function linear(t) {",
     "    return t",
     "}",
-    "// endregion"
+    "// endregion",
+    "",
+    "// region easeInQuad",
+    "function easeInQuad(t) {",
+    "    return t * t",
+    "}",
+    "// endregion",
+    "",
+    "// region easeOutQuad",
+    "function easeOutQuad(t) {",
+    "    return t * (2 - t)",
+    "}",
+    "// endregion",
+    "",
+    "export { linear, easeInQuad, easeOutQuad }"
   ],
   "regions": {
+    "easeInQuad": {
+      "a": 10,
+      "b": 13
+    },
+    "easeOutQuad": {
+      "a": 16,
+      "b": 19
+    },
     "linear": {
-      "a": 5,
-      "b": 8
+      "a": 4,
+      "b": 7
     }
   }
 }
