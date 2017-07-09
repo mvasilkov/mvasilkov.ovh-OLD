@@ -9,13 +9,11 @@
     "}",
     "// endregion",
     "",
-    "// region easeInQuad",
+    "// region quad",
     "function easeInQuad(t) {",
     "    return t * t",
     "}",
-    "// endregion",
     "",
-    "// region easeOutQuad",
     "function easeOutQuad(t) {",
     "    return t * (2 - t)",
     "}",
@@ -24,17 +22,13 @@
     "export { linear, easeInQuad, easeOutQuad }"
   ],
   "regions": {
-    "easeInQuad": {
-      "a": 10,
-      "b": 13
-    },
-    "easeOutQuad": {
-      "a": 16,
-      "b": 19
-    },
     "linear": {
       "a": 4,
       "b": 7
+    },
+    "quad": {
+      "a": 10,
+      "b": 17
     }
   }
 }

@@ -21,13 +21,12 @@ class Content extends React.Component {
                 <Graph y={linear} />
                 <Listing program={prog} region="linear" />
 
-                <h4>Quadratic ease-in</h4>
-                <Graph y={easeInQuad} />
-                <Listing program={prog} region="easeInQuad" />
-
-                <h4>Quadratic ease-out</h4>
-                <Graph y={easeOutQuad} />
-                <Listing program={prog} region="easeOutQuad" />
+                <h4>Quadratic easing</h4>
+                <div className="row">
+                    <Graph y={easeInQuad} />
+                    <Graph y={easeOutQuad} />
+                </div>
+                <Listing program={prog} region="quad" />
             </Article>
         )
     }

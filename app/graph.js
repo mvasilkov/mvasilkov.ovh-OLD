@@ -63,7 +63,7 @@ class Graph extends React.Component {
 
     render() {
         const paddedSize = SIZE + PADDING + PADDING
-        return <canvas height={paddedSize} width={paddedSize} />
+        return <canvas className="graph" height={paddedSize} width={paddedSize} />
     }
 }
 

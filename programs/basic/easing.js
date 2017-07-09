@@ -7,13 +7,11 @@ function linear(t) {
 }
 // endregion
 
-// region easeInQuad
+// region quad
 function easeInQuad(t) {
     return t * t
 }
-// endregion
 
-// region easeOutQuad
 function easeOutQuad(t) {
     return t * (2 - t)
 }
