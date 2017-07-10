@@ -1,5 +1,17 @@
 [
   {
+    "path": "goodhart_campbell",
+    "created": 1499582388,
+    "updated": 1499582388,
+    "title": "Goodhart-Campbell's law"
+  },
+  {
+    "path": "easing_functions",
+    "created": 1499268772,
+    "updated": 1499676194,
+    "title": "Easing functions"
+  },
+  {
     "path": "quine",
     "created": 1496071168,
     "updated": 1496071168,
