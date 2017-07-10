@@ -17,9 +17,34 @@
     "function easeOutQuad(t) {",
     "    return t * (2 - t)",
     "}",
+    "",
+    "function easeInOutQuad(t) {",
+    "    return t < 0.5 ?",
+    "        2 * t * t :",
+    "        2 * t * (2 - t) - 1",
+    "}",
     "// endregion",
     "",
-    "export { linear, easeInQuad, easeOutQuad }"
+    "// region util",
+    "/* Run an easing function backwards */",
+    "function easeOut(easing) {",
+    "    return function (t) {",
+    "        return 1 - easing(1 - t)",
+    "    }",
+    "}",
+    "",
+    "/* Make an easing function symmetrical */",
+    "function easeInOut(easing) {",
+    "    return function (t) {",
+    "        if (t < 0.5) {",
+    "            return easing(t * 2) * 0.5",
+    "        }",
+    "        return 1 - easing((1 - t) * 2) * 0.5",
+    "    }",
+    "}",
+    "// endregion",
+    "",
+    "export { linear, easeInQuad, easeOutQuad, easeInOutQuad }"
   ],
   "regions": {
     "linear": {
@@ -28,7 +53,11 @@
     },
     "quad": {
       "a": 10,
-      "b": 17
+      "b": 23
+    },
+    "util": {
+      "a": 26,
+      "b": 42
     }
   }
 }

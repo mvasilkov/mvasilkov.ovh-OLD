@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
-const SIZE = 200
+const SIZE = 150
 const PADDING = 5
 const STEP = 0.05
 

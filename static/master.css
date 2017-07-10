@@ -100,10 +100,10 @@ h3, h4 {
 
 @media (min-width: 48em) {
   h3::before {
-    bottom: 3px;
+    bottom: 4px;
     content: '<h3>'; }
   h4::before {
-    bottom: 1px;
+    bottom: 2px;
     content: '<h4>'; } }
 
 article {
@@ -134,8 +134,8 @@ pre {
   font-size: 0.8125rem; }
 
 .listing {
-  background-color: #fff;
-  border-left: 1px solid rgba(46, 52, 54, 0.91);
+  background-color: rgba(211, 215, 207, 0.2);
+  border: 1px solid #d3d7cf;
   padding: 1rem; }
 
 .changelog .line {

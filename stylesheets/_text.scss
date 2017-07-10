@@ -66,12 +66,12 @@ h3, h4 {
 
 @media (min-width: 48em) {
     h3::before {
-        bottom: 3px;
+        bottom: 4px;
         content: '<h3>';
     }
 
     h4::before {
-        bottom: 1px;
+        bottom: 2px;
         content: '<h4>';
     }
 }
@@ -117,7 +117,7 @@ pre {
 
 .listing {
     background-color: $color-background2;
-    border-left: 1px solid $color-copy;
+    border: 1px solid $color-border;
     padding: 1rem;
 }
 

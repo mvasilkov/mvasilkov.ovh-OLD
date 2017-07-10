@@ -3,7 +3,7 @@ import Article from '../app/article'
 import Listing from '../app/listing'
 import Graph from '../app/graph'
 
-import { linear, easeInQuad, easeOutQuad } from '../programs/basic/easing'
+import * as fun from '../programs/basic/easing'
 import prog from '../build/prog/basic/easing'
 
 export const pageTitle = 'Easing functions'
@@ -18,15 +18,19 @@ class Content extends React.Component {
                 <p>Easing functions specify the rate of change of a parameter over time.</p>
 
                 <h4>Linear interpolation</h4>
-                <Graph y={linear} />
+                <Graph y={fun.linear} />
                 <Listing program={prog} region="linear" />
 
                 <h4>Quadratic easing</h4>
                 <div className="row">
-                    <Graph y={easeInQuad} />
-                    <Graph y={easeOutQuad} />
+                    <Graph y={fun.easeInQuad} />
+                    <Graph y={fun.easeOutQuad} />
+                    <Graph y={fun.easeInOutQuad} />
                 </div>
                 <Listing program={prog} region="quad" />
+
+                <h4>Utility functions</h4>
+                <Listing program={prog} region="util" />
             </Article>
         )
     }
