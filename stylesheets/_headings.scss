@@ -1,0 +1,41 @@
+@import 'colors';
+
+h1, h2 {
+    background: -webkit-linear-gradient(0, $color-heading-1, $color-heading-2);
+    -webkit-background-clip: text;
+    color: $color-heading-fallback;
+    font-weight: 600;
+    letter-spacing: -1px;
+    -webkit-text-fill-color: transparent;
+}
+
+h3, h4 {
+    background: $color-light-blue;
+    color: $color-background;
+    display: table;
+    font-weight: 400;
+    margin-bottom: 1.625rem;
+    margin-top: 2rem;
+    outline: 1px solid $color-background;
+    padding: 0.3125rem 0.625rem;
+    position: relative;
+
+    &::before {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAFklEQVQI12NgIBswr/zyH4SJlyAaAAAMmQp9ch96oAAAAABJRU5ErkJggg==') bottom right;
+        background-size: 3px;
+        bottom: -0.625rem;
+        content: '';
+        left: 0.3125rem;
+        position: absolute;
+        right: -0.625rem;
+        top: 0.3125rem;
+        z-index: -1;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    h3::before, h4::before {
+    }
+}
