@@ -1,8 +1,17 @@
-// http://tango.freedesktop.org/static/cvs/tango-art-tools/palettes/Tango-Palette.svg
 $color-background: #fff;
-$color-background2: rgba(#d3d7cf, 0.2);
+
+// http://tango.freedesktop.org/static/cvs/tango-art-tools/palettes/Tango-Palette.svg
 $color-border: #d3d7cf;
+$color-background2: rgba($color-border, 0.2);
 $color-copy: transparentize(#2e3436, 0.09);
 $color-link: $color-copy;
 $color-weak: #888a85;
 $color-red: #ef2929;
+
+// https://material.io/guidelines/style/color.html#color-color-palette
+$color-light-blue: #03a9f4;
+
+// https://uigradients.com/#DayTripper
+$color-heading-1: #f857a6;
+$color-heading-2: #ff5858;
+$color-heading-fallback: mix($color-heading-1, $color-heading-2);

@@ -33,13 +33,11 @@ blockquote {
     font-size: 1rem;
     line-height: 1.375; }
   h1 {
-    font-size: 2.5rem;
-    line-height: 1.125; }
+    font-size: 2.5rem; }
   h2 {
     font-size: 2rem;
     line-height: 1.25; }
   h3 {
-    font-size: 1.5rem;
     line-height: 1.25; }
   h4 {
     line-height: 1.22222222; }
@@ -49,13 +47,11 @@ blockquote {
 
 @media (min-width: 56.25em) {
   h1 {
-    font-size: 3rem;
-    line-height: 1.05; }
+    font-size: 3rem; }
   h2 {
     font-size: 2.25rem;
     line-height: 1.25; }
   h3 {
-    font-size: 1.75rem;
     line-height: 1.25; } }
 
 body {
@@ -84,27 +80,30 @@ h1, h2, h3, h4 {
     font-size: 85%; }
 
 h1, h2 {
-  letter-spacing: -1px; }
+  background: -webkit-linear-gradient(0, #f857a6, #ff5858);
+  -webkit-background-clip: text;
+  color: #fc587f;
+  letter-spacing: -1px;
+  -webkit-text-fill-color: transparent; }
 
 h3, h4 {
+  background: #03a9f4;
+  color: #fff;
+  display: table;
   font-weight: 400;
+  margin-bottom: 1.625rem;
+  margin-top: 2rem;
+  padding: 0.3125rem 0.625rem;
   position: relative; }
   h3::before, h4::before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    color: #ef2929;
-    font-family: "SFMono-Regular", Consolas, "DejaVu Sans Mono", Menlo, Monaco, monospace;
-    font-size: 0.8125rem;
-    left: -2.5rem;
-    position: absolute; }
-
-@media (min-width: 48em) {
-  h3::before {
-    bottom: 4px;
-    content: '<h3>'; }
-  h4::before {
-    bottom: 2px;
-    content: '<h4>'; } }
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAEUlEQVR4AWPAAMwrv/zHEAQAMaQCoM33v/oAAAAASUVORK5CYII=") bottom right;
+    bottom: -0.625rem;
+    content: '';
+    left: 0.3125rem;
+    position: absolute;
+    right: -0.625rem;
+    top: 0.3125rem;
+    z-index: -1; }
 
 article {
   margin: 0 auto;
@@ -136,6 +135,7 @@ pre {
 .listing {
   background-color: rgba(211, 215, 207, 0.2);
   border: 1px solid #d3d7cf;
+  overflow-x: auto;
   padding: 1rem; }
 
 .changelog .line {

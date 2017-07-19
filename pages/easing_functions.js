@@ -14,8 +14,8 @@ class Content extends React.Component {
             <Article title={pageTitle}>
                 <header>
                     <h1>{pageTitle}</h1>
+                    <p>Easing functions specify the rate of change of a parameter over time.</p>
                 </header>
-                <p>Easing functions specify the rate of change of a parameter over time.</p>
 
                 <h4>Linear interpolation</h4>
                 <Graph y={fun.linear} />

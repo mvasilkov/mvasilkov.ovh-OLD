@@ -47,32 +47,32 @@ h1, h2, h3, h4 {
 }
 
 h1, h2 {
+    background: -webkit-linear-gradient(0, $color-heading-1, $color-heading-2);
+    -webkit-background-clip: text;
+    color: $color-heading-fallback;
     letter-spacing: -1px;
+    -webkit-text-fill-color: transparent;
 }
 
 h3, h4 {
+    background: $color-light-blue;
+    color: $color-background;
+    display: table;
     font-weight: 400;
+    margin-bottom: 1.625rem;
+    margin-top: 2rem;
+    padding: 0.3125rem 0.625rem;
     position: relative;
 
     &::before {
-        @include smoothing-antialiased;
-        color: $color-red;
-        font-family: $font-mono;
-        font-size: 0.8125rem;
-        left: -2.5rem;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAEUlEQVR4AWPAAMwrv/zHEAQAMaQCoM33v/oAAAAASUVORK5CYII=') bottom right;
+        bottom: -0.625rem;
+        content: '';
+        left: 0.3125rem;
         position: absolute;
-    }
-}
-
-@media (min-width: 48em) {
-    h3::before {
-        bottom: 4px;
-        content: '<h3>';
-    }
-
-    h4::before {
-        bottom: 2px;
-        content: '<h4>';
+        right: -0.625rem;
+        top: 0.3125rem;
+        z-index: -1;
     }
 }
 
@@ -118,6 +118,7 @@ pre {
 .listing {
     background-color: $color-background2;
     border: 1px solid $color-border;
+    overflow-x: auto;
     padding: 1rem;
 }
 
