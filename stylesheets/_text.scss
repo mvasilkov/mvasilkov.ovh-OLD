@@ -64,6 +64,10 @@ header {
         font-style: italic;
         margin-top: -0.5rem;
     }
+
+    h2 + p {
+        font-style: italic;
+    }
 }
 
 footer {

@@ -7,7 +7,7 @@ function encode(string) {
 
 if (require.main === module) {
     const mailto = encode('mailto:')
-    const email = encode('mvasilkov\u0040gmail.com')
+    const email = encode('mvasilkov\u002bovh\u0040gmail.com')
 
     const obj = { __html: `<a href="${mailto}${email}">${email}</a>` }
     jsonfile.writeFileSync('build/email.json', obj, { spaces: 2 })

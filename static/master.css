@@ -91,6 +91,8 @@ header {
   header h1 + p {
     font-style: italic;
     margin-top: -0.5rem; }
+  header h2 + p {
+    font-style: italic; }
 
 footer {
   margin: 2rem 0 1rem; }
@@ -139,8 +141,7 @@ h1, h2 {
   -webkit-background-clip: text;
   color: #fc587f;
   font-weight: 600;
-  letter-spacing: -1px;
-  -webkit-text-fill-color: transparent; }
+  letter-spacing: -1px; }
 
 h3, h4 {
   background: #03a9f4;

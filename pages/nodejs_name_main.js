@@ -13,6 +13,7 @@ class Content extends React.Component {
             <Article title={pageTitle}>
                 <header>
                     <h2>Node.js counterpart of Python's <code className="nowrap">__name__ == '__main__'</code></h2>
+                    <p>Determine whether a module has been run directly</p>
                 </header>
                 <p>The following programs are roughly equivalent:</p>
                 <h4>Python</h4>
