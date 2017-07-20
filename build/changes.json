@@ -2,13 +2,13 @@
   {
     "path": "goodhart_campbell",
     "created": 1499582388,
-    "updated": 1499582388,
-    "title": "Goodhart-Campbell's law"
+    "updated": 1500540444,
+    "title": "Goodhart's law, Campbell's law"
   },
   {
     "path": "easing_functions",
     "created": 1499268772,
-    "updated": 1499676194,
+    "updated": 1500450137,
     "title": "Easing functions"
   },
   {
@@ -38,7 +38,7 @@
   {
     "path": "nodejs_name_main",
     "created": 1490799889,
-    "updated": 1493072196,
+    "updated": 1500540444,
     "title": "Node.js counterpart of Python's __name__ == '__main__'"
   },
   {
