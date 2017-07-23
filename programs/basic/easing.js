@@ -23,6 +23,33 @@ function easeInOutQuad(t) {
 }
 // endregion
 
+// region cubic
+function easeInCubic(t) {
+    return t * t * t
+}
+
+function easeOutCubic(t) {
+    --t
+    return t * t * t + 1
+}
+
+const easeInOutCubic = easeInOut(easeInCubic)
+// endregion
+
+// region sine
+function easeInSine(t) {
+    return 1 - Math.cos(t * Math.PI * 0.5)
+}
+
+function easeOutSine(t) {
+    return Math.sin(t * Math.PI * 0.5)
+}
+
+function easeInOutSine(t) {
+    return (1 - Math.cos(t * Math.PI)) * 0.5
+}
+// endregion
+
 // region util
 /* Run an easing function backwards */
 function easeOut(easing) {
@@ -42,4 +69,9 @@ function easeInOut(easing) {
 }
 // endregion
 
-export { linear, easeInQuad, easeOutQuad, easeInOutQuad }
+export {
+    linear,
+    easeInQuad, easeOutQuad, easeInOutQuad,
+    easeInCubic, easeOutCubic, easeInOutCubic,
+    easeInSine, easeOutSine, easeInOutSine,
+}

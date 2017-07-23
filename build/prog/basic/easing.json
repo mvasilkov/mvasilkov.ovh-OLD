@@ -25,6 +25,33 @@
     "}",
     "// endregion",
     "",
+    "// region cubic",
+    "function easeInCubic(t) {",
+    "    return t * t * t",
+    "}",
+    "",
+    "function easeOutCubic(t) {",
+    "    --t",
+    "    return t * t * t + 1",
+    "}",
+    "",
+    "const easeInOutCubic = easeInOut(easeInCubic)",
+    "// endregion",
+    "",
+    "// region sine",
+    "function easeInSine(t) {",
+    "    return 1 - Math.cos(t * Math.PI * 0.5)",
+    "}",
+    "",
+    "function easeOutSine(t) {",
+    "    return Math.sin(t * Math.PI * 0.5)",
+    "}",
+    "",
+    "function easeInOutSine(t) {",
+    "    return (1 - Math.cos(t * Math.PI)) * 0.5",
+    "}",
+    "// endregion",
+    "",
     "// region util",
     "/* Run an easing function backwards */",
     "function easeOut(easing) {",
@@ -44,9 +71,18 @@
     "}",
     "// endregion",
     "",
-    "export { linear, easeInQuad, easeOutQuad, easeInOutQuad }"
+    "export {",
+    "    linear,",
+    "    easeInQuad, easeOutQuad, easeInOutQuad,",
+    "    easeInCubic, easeOutCubic, easeInOutCubic,",
+    "    easeInSine, easeOutSine, easeInOutSine,",
+    "}"
   ],
   "regions": {
+    "cubic": {
+      "a": 26,
+      "b": 36
+    },
     "linear": {
       "a": 4,
       "b": 7
@@ -55,9 +91,13 @@
       "a": 10,
       "b": 23
     },
+    "sine": {
+      "a": 39,
+      "b": 50
+    },
     "util": {
-      "a": 26,
-      "b": 42
+      "a": 53,
+      "b": 69
     }
   }
 }

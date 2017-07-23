@@ -18,6 +18,7 @@ class Content extends React.Component {
                 </header>
 
                 <h4>Linear interpolation</h4>
+                <p>A degenerate case.</p>
                 <Graph y={fun.linear} />
                 <Listing program={prog} region="linear" />
 
@@ -29,7 +30,24 @@ class Content extends React.Component {
                 </div>
                 <Listing program={prog} region="quad" />
 
+                <h4>Cubic easing</h4>
+                <div className="row">
+                    <Graph y={fun.easeInCubic} />
+                    <Graph y={fun.easeOutCubic} />
+                    <Graph y={fun.easeInOutCubic} />
+                </div>
+                <Listing program={prog} region="cubic" />
+
+                <h4>Sinusoidal easing</h4>
+                <div className="row">
+                    <Graph y={fun.easeInSine} />
+                    <Graph y={fun.easeOutSine} />
+                    <Graph y={fun.easeInOutSine} />
+                </div>
+                <Listing program={prog} region="sine" />
+
                 <h4>Utility functions</h4>
+                <p>The following helpers are used to modify easing functions.</p>
                 <Listing program={prog} region="util" />
             </Article>
         )

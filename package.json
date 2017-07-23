@@ -22,13 +22,17 @@
     "build": "next build",
     "start": "next start",
     "css": "node-sass -r stylesheets -o static",
-    "watch": "nodemon -w stylesheets -e scss -x 'yarn run css'",
+    "watch_css": "nodemon -w stylesheets -e scss -x 'yarn run css'",
+    "prog": "python3 build/make_prog.py",
+    "watch_prog": "nodemon -w programs -e java,js,py -x 'yarn run prog'",
+    "watch": "concurrently 'yarn watch_css' 'yarn watch_prog'",
     "test": "ava"
   },
   "devDependencies": {
     "ava": "^0.21.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-register": "^6.24.1",
+    "concurrently": "^3.5.0",
     "eol": "^0.9.0",
     "he": "^1.1.1",
     "jsonfile": "^3.0.0",
