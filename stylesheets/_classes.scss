@@ -16,11 +16,11 @@
 
 .postmeta {
     border-top: 1px solid $color-border;
-    color: transparentize($color-copy, 0.5);
-    font-family: $font-mono;
-    font-size: 0.8125rem;
-    line-height: 1.5;
     list-style: none;
     margin: 2rem 0 1rem;
     padding: 2rem 0 0;
+}
+
+.postmeta li {
+    opacity: 0.5;
 }

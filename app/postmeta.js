@@ -30,6 +30,7 @@ class Postmeta extends React.Component {
     render() {
         const { path } = this.props
         const postmeta = meta[path]
+        const github = `https://github.com/mvasilkov/mvasilkov.ovh/blob/master/pages/${path}.js`
 
         if (!postmeta) {
             throw new Error('Bad path: ' + path)
@@ -39,6 +40,7 @@ class Postmeta extends React.Component {
             <ul className="postmeta">
                 <li>Created: {pubdate(postmeta.created)}</li>
                 <li>Updated: {pubdate(postmeta.updated)}</li>
+                <li><a href={github}>Edit this page</a></li>
             </ul>
         )
     }
