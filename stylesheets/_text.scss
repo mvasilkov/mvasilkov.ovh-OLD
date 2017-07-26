@@ -90,6 +90,7 @@ pre {
 .listing {
     background-color: $color-background2;
     border: 1px solid $color-border;
+    border-radius: 3px;
     overflow-x: auto;
     padding: 1rem;
 }

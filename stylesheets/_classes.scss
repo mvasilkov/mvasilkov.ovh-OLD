@@ -1,3 +1,5 @@
+@import 'colors';
+
 .nowrap {
     white-space: nowrap;
 }
@@ -10,4 +12,15 @@
 .graph {
     margin-left: -5px;
     margin-right: 1.3125rem; // calc(1rem + 5px)
+}
+
+.postmeta {
+    border-top: 1px solid $color-border;
+    color: transparentize($color-copy, 0.5);
+    font-family: $font-mono;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    list-style: none;
+    margin: 2rem 0 1rem;
+    padding: 2rem 0 0;
 }

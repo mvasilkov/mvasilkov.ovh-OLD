@@ -1,8 +1,8 @@
 @import 'colors';
 
 h1, h2 {
-    background: -webkit-linear-gradient(0, $color-heading-1, $color-heading-2);
-    -webkit-background-clip: text;
+    // background: -webkit-linear-gradient(0, $color-heading-1, $color-heading-2);
+    // -webkit-background-clip: text;
     color: $color-heading-fallback;
     font-weight: 600;
     letter-spacing: -1px;
@@ -30,12 +30,5 @@ h3, h4 {
         right: -0.625rem;
         top: 0.3125rem;
         z-index: -1;
-    }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 2dppx),
-(min-resolution: 192dpi) {
-    h3::before, h4::before {
     }
 }

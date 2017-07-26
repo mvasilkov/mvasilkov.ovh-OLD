@@ -6,7 +6,7 @@ export const pageTitle = "Goodhart's law, Campbell's law"
 class Content extends React.Component {
     render() {
         return (
-            <Article title={pageTitle}>
+            <Article title={pageTitle} meta="goodhart_campbell">
                 <header>
                     <h2>{pageTitle}</h2>
                     <p>When a measure becomes a target, it ceases to be a good measure.</p>

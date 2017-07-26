@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import { loadFonts } from './fonts'
+import Postmeta from './postmeta'
 
 class Article extends React.Component {
     componentDidMount() {
@@ -20,6 +21,7 @@ class Article extends React.Component {
                 </Head>
                 {this.props.nav && this.nav()}
                 {this.props.children}
+                {this.props.meta && <Postmeta path={this.props.meta} />}
             </article>
         )
     }
@@ -36,6 +38,7 @@ class Article extends React.Component {
 }
 
 Article.defaultProps = {
+    meta: null,
     nav: true,
     title: 'Mark Vasilkov',
 }
