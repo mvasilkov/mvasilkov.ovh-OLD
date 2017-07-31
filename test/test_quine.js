@@ -6,6 +6,7 @@ import test from 'ava'
 const python = sh.which('python3') ? 'python3' : 'python'
 const quineJS = 'programs/basic/quine.js'
 const quinePython = 'programs/basic/quine.py'
+const quineJava = 'programs/basic/Main.java'
 
 test('Python quine', t => {
     const a = sh.exec(`${python} ${quinePython}`, { silent: true })
@@ -23,5 +24,13 @@ test('JS quine', t => {
     }
 
     const b = fs.readFileSync(quineJS, { encoding: 'utf-8' })
+    t.is(a.stdout, b)
+})
+
+test('Java quine', t => {
+    const a = sh.exec(`build/run_java.sh ${quineJava} ovh.mvasilkov.java.quine.Main`,
+        { silent: true })
+    t.is(a.code, 0)
+    const b = fs.readFileSync(quineJava, { encoding: 'utf-8' })
     t.is(a.stdout, b)
 })

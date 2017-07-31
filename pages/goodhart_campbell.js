@@ -8,7 +8,7 @@ class Content extends React.Component {
         return (
             <Article title={pageTitle} meta="goodhart_campbell">
                 <header>
-                    <h2>{pageTitle}</h2>
+                    <h1>{pageTitle}</h1>
                     <p>When a measure becomes a target, it ceases to be a good measure.</p>
                 </header>
 
