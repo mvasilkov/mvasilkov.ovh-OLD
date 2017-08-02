@@ -4,7 +4,7 @@ import Listing from '../app/listing'
 
 import progJS from '../build/prog/basic/quine'
 import progPython from '../build/prog/basic/quine_py'
-import progJava from '../build/prog/basic/Main_java'
+import progJava from '../build/prog/basic/Program_java'
 
 export const pageTitle = 'Quine (self-reproducing) programs'
 
