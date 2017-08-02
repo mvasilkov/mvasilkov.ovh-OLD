@@ -33,7 +33,8 @@ class Postmeta extends React.Component {
         const github = `https://github.com/mvasilkov/mvasilkov.ovh/blob/master/pages/${path}.js`
 
         if (!postmeta) {
-            throw new Error('Bad path: ' + path)
+            // throw new Error('Bad path: ' + path)
+            return null
         }
 
         return (

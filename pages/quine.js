@@ -25,6 +25,11 @@ class Content extends React.Component {
 
                 <h4>A Java quine, using ASCII codes</h4>
                 <Listing program={progJava} />
+                <p>The positional arguments are as follows:</p>
+                <pre className="listing">
+                    <code>%11$c = 0xa = '\n'<br /></code>
+                    <code>%12$c = 0x22 = '"'<br /></code>
+                </pre>
             </Article>
         )
     }

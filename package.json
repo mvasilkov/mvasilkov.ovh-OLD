@@ -39,5 +39,18 @@
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
     "shelljs": "^0.7.8"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ],
+    "presets": [
+      "next/babel"
+    ]
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Article from '../app/article'
 import Listing from '../app/listing'
 import Graph from '../app/graph'
@@ -18,7 +19,7 @@ class Content extends React.Component {
                 </header>
 
                 <h4>Linear interpolation</h4>
-                <p>A degenerate case.</p>
+                <p>A degenerate case, same as <Link href="/linear_interpolation"><a>lerp</a></Link>.</p>
                 <Graph y={fun.linear} />
                 <Listing program={prog} region="linear" />
 
