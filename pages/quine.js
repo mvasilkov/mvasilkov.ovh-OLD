@@ -27,8 +27,8 @@ class Content extends React.Component {
                 <Listing program={progJava} />
                 <p>The positional arguments are as follows:</p>
                 <pre className="listing">
-                    <code>%11$c = 0xa = '\n'<br /></code>
-                    <code>%12$c = 0x22 = '"'<br /></code>
+                    <code>%11$c = 0xa = '\n'{'\n'}</code>
+                    <code>%12$c = 0x22 = '"'{'\n'}</code>
                 </pre>
             </Article>
         )

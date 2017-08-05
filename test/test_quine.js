@@ -7,6 +7,8 @@ const python = sh.which('python3') ? 'python3' : 'python'
 const quineJS = 'programs/basic/quine.js'
 const quinePython = 'programs/basic/quine.py'
 const quineJava = 'programs/basic/Program.java'
+/* Skip if MS-DOS */
+const unix = process.platform == 'win32' ? test.skip : test
 
 test('Python quine', t => {
     const a = sh.exec(`${python} ${quinePython}`, { silent: true })
@@ -27,7 +29,7 @@ test('JS quine', t => {
     t.is(a.stdout, b)
 })
 
-test('Java quine', t => {
+unix('Java quine', t => {
     const a = sh.exec(`build/run_java.sh ${quineJava} ovh.mvasilkov.java.quine.Program`,
         { silent: true })
     t.is(a.code, 0)

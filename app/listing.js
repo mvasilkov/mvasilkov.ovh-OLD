@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import multili from 'multili'
+import noindent from './noindent'
 
 class Listing extends React.Component {
     render() {
@@ -10,7 +10,7 @@ class Listing extends React.Component {
 
         if (region) {
             const { a, b } = p.regions[region]
-            lines = multili(lines.slice(a, b))
+            lines = noindent(lines.slice(a, b))
         }
 
         return (

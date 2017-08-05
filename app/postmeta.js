@@ -37,10 +37,12 @@ class Postmeta extends React.Component {
             return null
         }
 
+        const { created, updated } = postmeta
+
         return (
             <ul className="postmeta">
-                <li>Created: {pubdate(postmeta.created)}</li>
-                <li>Updated: {pubdate(postmeta.updated)}</li>
+                <li>Created: {pubdate(created)}</li>
+                {created == updated || <li>Updated: {pubdate(updated)}</li>}
                 <li><a href={github}>Edit this page</a></li>
             </ul>
         )
