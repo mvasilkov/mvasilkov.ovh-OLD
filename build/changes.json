@@ -2,7 +2,7 @@
   {
     "path": "linear_interpolation",
     "created": 1501668430,
-    "updated": 1501668430,
+    "updated": 1501961202,
     "title": "Linear interpolation (lerp)"
   },
   {
@@ -20,7 +20,7 @@
   {
     "path": "quine",
     "created": 1496071168,
-    "updated": 1501668430,
+    "updated": 1501961202,
     "title": "Quine (self-reproducing) programs"
   },
   {

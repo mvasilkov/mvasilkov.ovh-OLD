@@ -35,6 +35,7 @@
     "    return t * t * t + 1",
     "}",
     "",
+    "/* See below */",
     "const easeInOutCubic = easeInOut(easeInCubic)",
     "// endregion",
     "",
@@ -81,7 +82,7 @@
   "regions": {
     "cubic": {
       "a": 26,
-      "b": 36
+      "b": 37
     },
     "linear": {
       "a": 4,
@@ -92,12 +93,12 @@
       "b": 23
     },
     "sine": {
-      "a": 39,
-      "b": 50
+      "a": 40,
+      "b": 51
     },
     "util": {
-      "a": 53,
-      "b": 69
+      "a": 54,
+      "b": 70
     }
   }
 }

@@ -12,7 +12,7 @@ export const pageTitle = 'Easing functions'
 class Content extends React.Component {
     render() {
         return (
-            <Article title={pageTitle}>
+            <Article title={pageTitle} meta="easing_functions">
                 <header>
                     <h1>{pageTitle}</h1>
                     <p>Easing functions specify the rate of change of a parameter over time.</p>

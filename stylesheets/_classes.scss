@@ -24,3 +24,8 @@
 .postmeta li {
     opacity: 0.5;
 }
+
+.listing + .postmeta {
+    border: 0;
+    margin-top: 0;
+}

@@ -16,15 +16,17 @@ class Graph extends React.Component {
     }
 
     paint() {
+        const pixelRatio = 2 /* HiDPI Canvas */
+        const paddedSize = (SIZE + PADDING + PADDING) * pixelRatio
         const htmlCanvas = ReactDOM.findDOMNode(this)
         const canvas = htmlCanvas.getContext('2d')
         const y = this.props.y
 
-        canvas.clearRect(0, 0, htmlCanvas.width, htmlCanvas.height)
+        canvas.clearRect(0, 0, htmlCanvas.width = paddedSize, htmlCanvas.height = paddedSize)
 
         canvas.save()
         canvas.translate(0, htmlCanvas.height)
-        canvas.scale(1, -1)
+        canvas.scale(pixelRatio, -pixelRatio)
         canvas.translate(PADDING + 0.5, PADDING + 0.5)
 
         canvas.beginPath()
@@ -63,7 +65,11 @@ class Graph extends React.Component {
 
     render() {
         const paddedSize = SIZE + PADDING + PADDING
-        return <canvas className="graph" height={paddedSize} width={paddedSize} />
+        const style = {
+            height: paddedSize,
+            width: paddedSize,
+        }
+        return <canvas className="graph" style={style} />
     }
 }
 
