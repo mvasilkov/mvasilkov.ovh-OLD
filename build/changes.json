@@ -1,8 +1,14 @@
 [
   {
+    "path": "webaudio/basic",
+    "created": 1502181595,
+    "updated": 1502181595,
+    "title": "Web audio basics: an oscillator"
+  },
+  {
     "path": "linear_interpolation",
     "created": 1501668430,
-    "updated": 1501961202,
+    "updated": 1502181595,
     "title": "Linear interpolation (lerp)"
   },
   {
@@ -14,13 +20,13 @@
   {
     "path": "easing_functions",
     "created": 1499268772,
-    "updated": 1501668430,
+    "updated": 1502013778,
     "title": "Easing functions"
   },
   {
     "path": "quine",
     "created": 1496071168,
-    "updated": 1501961202,
+    "updated": 1502181595,
     "title": "Quine (self-reproducing) programs"
   },
   {
