@@ -18,10 +18,10 @@ class Content extends React.Component {
                 <h4>Fast (imprecise) lerp function</h4>
                 <Listing program={prog} region="lerpFast" />
                 <p>This variant is susceptible to floating-point error, for example:</p>
-                <pre className="listing">
-                    <code>lerpFast(0.4, 0.1, 1){'\n'}</code>
-                    <code>/* returns 0.09999999999999998 instead of 0.1 */{'\n'}</code>
-                </pre>
+                <Listing program={[
+                    'lerpFast(0.4, 0.1, 1)',
+                    '/* returns 0.09999999999999998 instead of 0.1 */',
+                ]} />
 
                 <h4>Standard (precise) lerp function</h4>
                 <Listing program={prog} region="lerp" />
