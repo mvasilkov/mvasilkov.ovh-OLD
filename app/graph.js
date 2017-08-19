@@ -7,13 +7,9 @@ const PADDING = 5
 const STEP = 0.05
 
 class Graph extends React.Component {
-    componentDidMount() {
-        this.paint()
-    }
+    componentDidMount() { this.paint() }
 
-    componentDidUpdate() {
-        this.paint()
-    }
+    componentDidUpdate() { this.paint() }
 
     paint() {
         const pixelRatio = 2 /* HiDPI Canvas */
