@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'util';
 
 // https://bitsofco.de/the-new-system-font-stack/
 $font-stack: (-apple-system, system-ui, BlinkMacSystemFont,
@@ -124,4 +125,6 @@ hr {
 canvas {
     display: block;
     margin: 0 0 1rem 0;
+
+    @include not-selectable;
 }

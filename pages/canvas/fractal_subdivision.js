@@ -3,14 +3,14 @@ import Article from '../../app/article'
 import Canvas from '../../app/canvas'
 import Listing from '../../app/listing'
 
-import * as circles from '../../programs/canvas/circles.js'
+import * as circles from '../../programs/canvas/circles'
 
 export const pageTitle = 'The fractal subdivision algorithm'
 
 class Content extends React.Component {
     render() {
         return (
-            <Article title={pageTitle}>
+            <Article title={pageTitle} meta="canvas/fractal_subdivision">
                 <header>
                     <h2>{pageTitle}</h2>
                 </header>
@@ -18,6 +18,8 @@ class Content extends React.Component {
                 <Canvas height={circles.CANVAS_SIZE} width={circles.CANVAS_SIZE} paint={paint}
                     onClick={event => { this.canvas && this.canvas.forceUpdate() }}
                     ref={component => { this.canvas = component }} />
+
+                <p>Click on the canvas to refresh.</p>
             </Article>
         )
     }

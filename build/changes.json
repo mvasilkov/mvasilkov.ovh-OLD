@@ -1,5 +1,11 @@
 [
   {
+    "path": "canvas/fractal_subdivision",
+    "created": 1503162777,
+    "updated": 1505585624,
+    "title": "The fractal subdivision algorithm"
+  },
+  {
     "path": "webaudio/basic",
     "created": 1502181595,
     "updated": 1502181595,

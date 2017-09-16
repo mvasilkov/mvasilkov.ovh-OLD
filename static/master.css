@@ -135,7 +135,13 @@ hr {
 
 canvas {
   display: block;
-  margin: 0 0 1rem 0; }
+  margin: 0 0 1rem 0;
+  -moz-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none; }
 
 h1, h2 {
   color: #fc587f;
